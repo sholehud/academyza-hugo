@@ -9,8 +9,11 @@ url = "https://sholeh.space"
 
 [params.company]
 name = "academyza"
+shortname = "academyza"
 description = "academyza website free for our school"
 keywords = ["website", "company", "school"]
+email = "company@email.com"
+phone = "+62 811 123 456"
 
 [params.hero]
 heading = "Welcome to Academyza"
