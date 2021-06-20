@@ -1,13 +1,13 @@
 <header class="header">
   <div class="header-top">
     <ul class="container">
-      <li>company@email.com</li>
-      <li>+62 811 234 5678</li>
+      <li>{{ .Site.Params.company.email }}</li>
+      <li>{{ .Site.Params.company.phone }}</li>
     </ul>
   </div>
   <div class="container navbar">
     <div class="brand">
-      <a class="title" href="">academyza</a>
+      <a class="title" href="">{{ .Site.Params.company.shortname }}</a>
     </div>
     <button aria-label="button menu">
       <svg
