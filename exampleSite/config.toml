@@ -1,0 +1,17 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "My Academyza Hugo"
+theme = "academyza-hugo"
+
+[params.author]
+name = "sholehud"
+url = "https://sholeh.space"
+
+[params.company]
+name = "academyza"
+description = "academyza website free for our school"
+keywords = ["website", "company", "school"]
+
+[params.hero]
+heading = "Welcome to Academyza"
+subheading = "The right place for learn Anything."
