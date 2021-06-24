@@ -1,0 +1,14 @@
+{{ define "main" }}
+  <article class="markdownify">
+    <figure>
+      <img src="{{ .Params.image.url }}" alt="{{ .Params.image.alt }}">
+      <figcaption>design image cover by {{ .Params.image.from }}</figcaption>
+    </figure>
+    <h1>{{ .Title }}</h1>
+    <span>Publish at {{ .PublishDate.Format "January 2, 2006" }} - {{ math.Round (div (countwords .Content) 220.0) }} Minutes
+      Read.</span>
+      <div class="content">
+        {{ .Content }}
+      </div>
+  </article>
+{{ end }}

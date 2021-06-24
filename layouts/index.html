@@ -1,2 +1,15 @@
-{{ define "main" }} {{ range where .Site.RegularPages "Section" "informations"
-}} {{ partial "content.html" . }} {{ end }} {{ end }}
+{{ define "main" }}
+
+<section class="main">
+  <div class="content">
+    <header class="heading">
+      <h1 class="title">informations</h1>
+    </header>
+    {{ range where .Site.RegularPages "Section" "informations" }}
+      {{ partial "content.html" . }}
+    {{ end }}
+  </div>
+</section>
+
+
+{{ end }}

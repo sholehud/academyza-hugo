@@ -1,9 +1,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  {{ if .IsHome }}
   <meta name="description" content="{{ .Site.Params.company.description }}" />
   <meta name="keywords" content="{{ .Site.Params.company.keywords }}" />
+  {{ else }}
+  <meta property="og:title" content="{{ .Title }}" />
+  <meta property="og:description" content="{{ .Description }}" />
+  <meta property="og:image" content="{{ .Params.image.url }}" />
+  <meta name="description" content="{{ .Description }}" />
+  {{ end }}
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/markdownify.css">
   <title>{{ .Site.Title }}</title>
 </head>

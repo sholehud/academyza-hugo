@@ -1,0 +1,45 @@
+/*
+MARKDOWNFY CONFIG CSS
+*/
+
+.markdownify {
+  padding: 1rem 0;
+}
+
+.markdownify ol {
+  line-height: 18px;
+}
+
+.markdownify li {
+  margin-left: 2rem;
+}
+
+.markdownify figure {
+  position: relative;
+}
+
+.markdownify img {
+  width: 100%;
+  height: 174px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.markdownify figcaption {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: var(--gray);
+}
+
+.markdownify h1 {
+  margin: .6rem 0;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.markdownify h2 {
+  margin: .6rem 0;
+  font-size: 1.6rem;
+  font-weight: 500;
+}

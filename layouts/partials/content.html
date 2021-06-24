@@ -1,31 +1,24 @@
-<section class="main">
-  <div class="content">
-    <header class="heading">
-      <h1 class="title">informations</h1>
-    </header>
-    <a href="/" class="card">
-      <article class="card-container">
-        <figure class="card-image">
-          <img
-            class="fill"
-            src="{{ .Params.image.url }}"
-            alt="{{ .Params.image.alt }}"
-          />
-          <figcaption class="card-image-info">
-            design image cover by {{ .Params.image.from }}
-          </figcaption>
-        </figure>
-        <div class="card-body">
-          <h1 class="card-title">{{ .Title }}</h1>
-          <div class="card-detail">
-            <span>Publish at {{ .PublishDate.Format "January 2, 2006" }}</span>
-            <span
-              >{{ math.Round (div (countwords .Content) 220.0) }} Minutes
-              Read.</span
-            >
-          </div>
-        </div>
-      </article>
-    </a>
-  </div>
-</section>
+<a href="{{ .Permalink }}" class="card">
+  <article class="card-container">
+    <figure class="card-image">
+      <img
+        class="fill"
+        src="{{ .Params.image.url }}"
+        alt="{{ .Params.image.alt }}"
+      />
+      <figcaption class="card-image-info">
+        design image cover by {{ .Params.image.from }}
+      </figcaption>
+    </figure>
+    <div class="card-body">
+      <h1 class="card-title">{{ .Title }}</h1>
+      <div class="card-detail">
+        <span>Publish at {{ .PublishDate.Format "January 2, 2006" }}</span>
+        <span
+          >{{ math.Round (div (countwords .Content) 220.0) }} Minutes
+          Read.</span
+        >
+      </div>
+    </div>
+  </article>
+</a>

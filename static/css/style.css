@@ -2,6 +2,8 @@
 CONFIG CSS BY SHOLEHUD https://www.github.com/sholehud/
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap');
+
 :root {
   --theme-color-1: #6aa6ff;
   --theme-color-2: #eaf2ff;
@@ -20,6 +22,12 @@ CONFIG CSS BY SHOLEHUD https://www.github.com/sholehud/
   box-sizing: border-box;
   transition: 0.3s;
   font-size: 12px;
+  font-family: 'Rubik', sans-serif;
+}
+
+body {
+  max-width: 425px;
+  margin: 0 auto;
 }
 
 img {
@@ -59,8 +67,8 @@ button {
   margin: 0.6rem 0;
 }
 
-.heading,
-.sub-heading {
+.heading.center,
+.sub-heading.center {
   text-align: center;
 }
 
