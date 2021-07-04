@@ -6,6 +6,11 @@ MARKDOWNFY CONFIG CSS
   padding: 1rem 0;
 }
 
+.markdownify a {
+  font-size: 1.5rem !important;
+  font-weight: 500 !important;
+}
+
 .markdownify ol {
   line-height: 18px;
 }
